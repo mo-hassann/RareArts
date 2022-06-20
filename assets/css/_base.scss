@@ -1,0 +1,152 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*-------- Colors --------*/
+  --first-color: hsl(246, 95%, 53%);
+  --first-color-alt: hsl(246, 95%, 43%);
+  --second-color: hsl(307, 94%, 56%);
+  --second-color-alt: hsl(287, 80%, 53%);
+  --gradient-color: linear-gradient(
+    45deg,
+    var(--first-color),
+    var(--second-color)
+  );
+  --title-color: hsl(0, 0%, 90%);
+  --text-color: hsl(0, 0%, 80%);
+  --text-color-light: hsl(0, 0%, 80%);
+  --body-color: linear-gradient(48deg, #2f0f32, #170d18);
+
+  /*-------- Font --------*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 4rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+
+  --font-medium: 500;
+  --font-semi-bold: 700;
+
+  /*-------- Other --------*/
+  --main-transition: all 0.5s ease;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* html {
+    scroll-behavior: smooth;
+  } */
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background: var(--body-color) no-repeat fixed;
+  color: var(--text-color);
+  transition: 0.3s; /* For animation dark mode */
+  height: 200vh;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  outline: none;
+  border: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.btn {
+  background: var(--gradient-color) border-box;
+  padding: 0.9rem 1.8rem;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: var(--small-font-size);
+  transition: var(--main-transition);
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.list {
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    span {
+      position: relative;
+      margin-right: 1.25rem;
+      display: inline-block;
+      text-align: center;
+      font-size: 1.6rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--gradient-color);
+        opacity: 0.2;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 10px;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.frame {
+  border: 4px solid #fff;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.section {
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--second-color);
+}
+/*=============== THEME ===============*/

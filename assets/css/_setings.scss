@@ -1,0 +1,38 @@
+/*------- Dark theme -------*/
+.dark {
+  --first-color-lighten: hsl(228, 100%, 3%);
+  --text-color-light: hsl(228, 12%, 25%);
+  --border-color: hsl(228, 99%, 22%);
+  --body-color: hsl(0, 0%, 20%);
+  --container-color: hsl(0, 0%, 16%);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1024px) {
+  :root {
+    --biggest-font-size: 2.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
+// For medium devices
+@media screen and (max-width: 768px) {
+  // :root {
+  // }
+  @include header_768px;
+  @include home_768px;
+  @include works_768px;
+}
+
+// For small devices
+@media screen and (max-width: 425px) {
+  // :root {
+  // }
+  @include header_425px;
+}
