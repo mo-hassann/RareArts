@@ -1,6 +1,6 @@
 # RareArts
 
-- RareArts is a responsive landing page created with html, sass, java script
+- RareArts is a responsive landing page created with html, sass and java script
 
 - [preview](https://htmlpreview.github.io/?https://github.com/mo-hassann/RareArts/blob/master/index.html)
 
