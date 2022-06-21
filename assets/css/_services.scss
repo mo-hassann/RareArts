@@ -1,0 +1,34 @@
+.services {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .section-top {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 8rem;
+
+      .services-img-container:nth-child(2) {
+        transform: translateY(5rem);
+      }
+    }
+  }
+}
+
+@mixin services_768px {
+  .main {
+    .services {
+      .container {
+        .section-top {
+          flex-direction: column;
+          margin-bottom: 3rem;
+
+          .services-img-container:nth-child(2) {
+            transform: unset;
+          }
+        }
+      }
+    }
+  }
+}

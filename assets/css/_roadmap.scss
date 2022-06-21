@@ -1,0 +1,31 @@
+.roadmap {
+  .main-title {
+    margin-bottom: 6rem;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    .section-left {
+      transform: translateY(-3rem);
+    }
+
+    .list {
+      margin: 0;
+    }
+  }
+}
+
+@mixin roadmap_768px {
+  .roadmap {
+    .main-title {
+      margin-bottom: 2.5rem;
+    }
+    .container {
+      flex-direction: column;
+
+      .section-left {
+        transform: unset;
+      }
+    }
+  }
+}
