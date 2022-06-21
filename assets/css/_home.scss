@@ -1,8 +1,8 @@
 .main {
   #home {
     position: relative;
-    height: 100vh;
-    padding-top: 5.5rem;
+    min-height: 100vh;
+    padding-top: 7.5rem;
     &::before {
       content: "";
       position: absolute;
@@ -60,7 +60,7 @@
       }
       .section-right {
         .hero-img-container {
-          width: 80%;
+          width: 75%;
           margin-left: auto;
         }
       }
@@ -71,7 +71,6 @@
 @mixin home_768px {
   .main {
     #home {
-      height: auto;
       &::before {
         top: unset;
         bottom: 0;
