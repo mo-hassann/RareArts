@@ -4,3 +4,4 @@
 
 ![RareArts](./assets/imgs/RareArts_desktop.png)
 ![RareArts](./assets/imgs/RareArts_mobile.png)
+![RareArts](./assets/imgs/RareArts_mobile2.png)
