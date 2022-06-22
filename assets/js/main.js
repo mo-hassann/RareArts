@@ -1,6 +1,6 @@
 "use strict";
 
-// navbar btn
+// sidebar btn in meduim devices
 const navbar = document.querySelector(".navbar");
 const navbarBTN = document.querySelector(".navbar-btn");
 
@@ -23,7 +23,7 @@ navItemsContainer.addEventListener("click", function (e) {
   navItemsContainer.classList.remove("active");
 });
 
-// header fixed
+// header fixed on scrol
 const header = document.querySelector("#main-header");
 window.addEventListener("scroll", function (e) {
   if (this.window.pageYOffset > 100) {
@@ -32,25 +32,3 @@ window.addEventListener("scroll", function (e) {
     header.classList.remove("fixed");
   }
 });
-/* 
-const headerCon = document.querySelector("#main-header .container");
-
-const headerObsorver = new IntersectionObserver(
-  function (entries) {
-    const [entry] = entries;
-    console.log(entry);
-
-    if (entry.isIntersecting) {
-      headerCon.classList.remove("fixed");
-    } else {
-      headerCon.classList.add("fixed");
-    }
-  },
-  {
-    root: null,
-    rootMargin: `0px`,
-    threshold: 1.0,
-  }
-);
-
-headerObsorver.observe(header); */

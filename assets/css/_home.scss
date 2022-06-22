@@ -73,6 +73,7 @@
 @mixin home_768px {
   .main {
     #home {
+      text-align: center;
       &::before {
         top: unset;
         bottom: 0;
