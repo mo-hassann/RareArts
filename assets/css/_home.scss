@@ -93,3 +93,17 @@
     }
   }
 }
+
+@mixin home_425px {
+  .main {
+    #home {
+      .container {
+        .section-right {
+          .hero-img-container {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}

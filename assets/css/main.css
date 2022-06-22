@@ -16,15 +16,6 @@
   --body-color: linear-gradient(48deg, #2f0f32, #170d18);
   /*-------- Font --------*/
   --body-font: "Exo", sans-serif;
-  --biggest-font-size: 4rem;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.813rem;
-  --font-medium: 500;
-  --font-semi-bold: 700;
   /*-------- Other --------*/
   --main-transition: all 0.5s ease;
 }
@@ -42,19 +33,17 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
   background: var(--body-color) no-repeat fixed;
   color: var(--text-color);
-  transition: 0.3s;
-  /* For animation dark mode */
   height: 200vh;
+  overflow-x: hidden;
 }
 
 h1,
 h2,
 h3 {
   color: var(--title-color);
-  font-weight: var(--font-semi-bold);
+  font-weight: 700;
 }
 
 ul {
@@ -85,7 +74,7 @@ button {
   border-radius: 5px;
   display: inline-block;
   text-transform: capitalize;
-  font-size: var(--small-font-size);
+  font-size: 1rem;
   transition: var(--main-transition);
 }
 .btn:hover {
@@ -157,9 +146,12 @@ button {
 }
 
 .frame {
-  border: 4px solid #fff;
+  border: 4px solid #eee;
   border-radius: 40px;
+  background-color: #170d18;
   overflow: hidden;
+  min-width: 290px;
+  min-height: 390px;
 }
 
 .card {
@@ -201,12 +193,6 @@ button {
 .section-title {
   font-size: 2rem;
   margin-bottom: 2.5rem;
-}
-
-.section__subtitle {
-  display: block;
-  font-size: var(--small-font-size);
-  color: var(--second-color);
 }
 
 /*=============== THEME ===============*/
@@ -339,6 +325,10 @@ button {
   gap: 2rem;
   margin-bottom: 8rem;
 }
+.services .container .section-top .services-img-container {
+  min-width: unset;
+  min-height: unset;
+}
 .services .container .section-top .services-img-container:nth-child(2) {
   transform: translateY(5rem);
 }
@@ -359,6 +349,7 @@ button {
 
 .footer {
   background: url("../imgs/footer-background.png") no-repeat center center/cover;
+  background-color: #321134;
 }
 .footer .container {
   display: flex;
@@ -379,18 +370,7 @@ button {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
-@media screen and (max-width: 1024px) {
-  :root {
-    --biggest-font-size: 2.25rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-  }
-}
+/* For medium devices */
 @media screen and (max-width: 768px) {
   html {
     font-size: 90%;
@@ -476,12 +456,29 @@ button {
     gap: 2rem;
   }
 }
+/* For small devices */
 @media screen and (max-width: 425px) {
   html {
     font-size: 80%;
   }
 
+  .main #home .container .section-right .hero-img-container {
+    width: auto;
+  }
+
   #main-header .container .navbar {
     width: 100%;
+  }
+}
+/* For smaller devices */
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* For smaller devices */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 65%;
   }
 }/*# sourceMappingURL=main.css.map */

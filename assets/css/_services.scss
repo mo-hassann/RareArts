@@ -9,6 +9,11 @@
       gap: 2rem;
       margin-bottom: 8rem;
 
+      .services-img-container {
+        min-width: unset;
+        min-height: unset;
+      }
+
       .services-img-container:nth-child(2) {
         transform: translateY(5rem);
       }

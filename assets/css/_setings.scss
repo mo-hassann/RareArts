@@ -1,18 +1,5 @@
 /*=============== BREAKPOINTS ===============*/
-/* For large devices */
-@media screen and (max-width: 1024px) {
-  :root {
-    --biggest-font-size: 2.25rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-  }
-}
-
-// For medium devices
+/* For medium devices */
 @media screen and (max-width: 768px) {
   html {
     font-size: 90%;
@@ -26,11 +13,25 @@
   @include footer_768px;
 }
 
-// For small devices
+/* For small devices */
 @media screen and (max-width: 425px) {
   html {
     font-size: 80%;
   }
-
+  @include home_425px;
   @include header_425px;
+}
+
+/* For smaller devices */
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* For smaller devices */
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 65%;
+  }
 }
