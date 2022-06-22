@@ -1,12 +1,3 @@
-/*------- Dark theme -------*/
-.dark {
-  --first-color-lighten: hsl(228, 100%, 3%);
-  --text-color-light: hsl(228, 12%, 25%);
-  --border-color: hsl(228, 99%, 22%);
-  --body-color: hsl(0, 0%, 20%);
-  --container-color: hsl(0, 0%, 16%);
-}
-
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1024px) {
@@ -23,18 +14,23 @@
 
 // For medium devices
 @media screen and (max-width: 768px) {
-  // :root {
-  // }
+  html {
+    font-size: 90%;
+  }
+
   @include header_768px;
   @include home_768px;
   @include works_768px;
   @include services_768px;
   @include roadmap_768px;
+  @include footer_768px;
 }
 
 // For small devices
 @media screen and (max-width: 425px) {
-  // :root {
-  // }
+  html {
+    font-size: 80%;
+  }
+
   @include header_425px;
 }

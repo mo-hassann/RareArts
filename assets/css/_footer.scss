@@ -1,4 +1,32 @@
 .footer {
-  background-image: url("../imgs/footer-background.png");
-  background-position: left center;
+  background: url("../imgs/footer-background.png") no-repeat center center/cover;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .btns {
+      .btg {
+        margin-left: 1rem;
+        transition: var(--main-transition);
+        &:hover {
+          opacity: 0.5;
+        }
+        svg {
+          fill: #eee;
+        }
+      }
+    }
+  }
+}
+
+@mixin footer_768px {
+  .footer {
+    .container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
 }

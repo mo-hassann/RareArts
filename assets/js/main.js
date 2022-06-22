@@ -14,7 +14,6 @@ const navItems = document.querySelectorAll(".nav-item");
 
 navItemsContainer.addEventListener("click", function (e) {
   const el = e.target.closest(".nav-item");
-  console.log(el);
   if (!el) return;
 
   navItems.forEach((item) => {

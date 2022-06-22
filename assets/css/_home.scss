@@ -1,5 +1,6 @@
 .main {
   #home {
+    display: grid;
     position: relative;
     min-height: 100vh;
     padding-top: 7.5rem;
@@ -43,6 +44,7 @@
 
         .home-description {
           margin-bottom: 2.5rem;
+          font-size: 1.2rem;
         }
 
         .home-btns {
